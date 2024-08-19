@@ -23,3 +23,4 @@
 -----
 
 - Once you have added ur db config as listed above, go to the src folder from terminal and execute `npx-sequelize-db:create`
+-----
