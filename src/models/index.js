@@ -1,3 +1,6 @@
+//BU.its getting all the required dependencies and configuring all of our tables
+
+
 'use strict';
 
 const fs = require('fs');
