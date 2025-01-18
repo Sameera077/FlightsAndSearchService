@@ -15,11 +15,11 @@
 
 # Welcome to Flights Service
 ## Project setup
-    - clone the project on ur local
-    - execute `npm install` on the same pasth of ur root directory of the dnlded project
-    - Create a '.env' file in the root directory and add the flng environment variables
+    - clone the project on your local
+    - execute `npm install` on the same path of your root directory of the downloaded project
+    - Create a `.env` file in the root directory and add the following environment variables
         - `PORT=3000`
-    - Inside the `src/config` folder, create a new file 'config.json' and then add the flng piece of json
+    - Inside the `src/config` folder, create a new file `config.json` and then add the following piece of JSON
 
     ...
         {
@@ -32,6 +32,5 @@
             }
         }
     ...
-
 
     
