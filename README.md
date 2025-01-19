@@ -20,7 +20,9 @@
         }
     ...
 
-    - Once u have added ur db config as listed above, go to the src folder from ur terminal and execute `npx sequelize db:create` 
+    - Once u have added ur db config as listed above, go to the src folder from ur terminal and execute `npx sequelize db:create`  and the execute
+
+    `npx sequelize db:migrate`
 .....
 
 
