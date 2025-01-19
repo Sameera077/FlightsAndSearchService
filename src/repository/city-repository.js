@@ -7,7 +7,7 @@ class CityRepository {
             const city = await City.create({name});
             return city;
         } catch (error) {
-            console.log("Sometjing went wrong in the repository later");
+            console.log("Something went wrong in the repository later");
             throw {error};  
         }
     }
@@ -21,12 +21,12 @@ class CityRepository {
             });
             return true;
         } catch (error) {
-            console.log("Sometjing went wrong in the repository later");
+            console.log("Something went wrong in the repository later");
             throw {error};
         }
     }
 
-    async updateCity(cityId, data) {
+    async updateCity(cityId, data) { // {name: " Sameera"}
         try {
             const city = await City.update(data, {
                 where : {
@@ -35,7 +35,7 @@ class CityRepository {
             });
             return city;
         } catch (error) {
-            console.log("Sometjing went wrong in the repository later");
+            console.log("Something went wrong in the repository later");
             throw {error};
         }
     }
@@ -45,7 +45,7 @@ class CityRepository {
             const city = await City.findByPk(cityId);
             return city;
         } catch (error) {
-            console.log("Sometjing went wrong in the repository later");
+            console.log("Something went wrong in the repository later");
             throw {error};
         }
     }
