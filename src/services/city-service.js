@@ -1,5 +1,15 @@
-const {CityRepository} = require('../repository/index');
+//BU
+//The file city-service.js defines a service class, CityService,
+// which acts as an intermediary between the application and the data layer (in this case, the CityRepository).
 
+//1.City Management:The CityService class provides methods to manage city data, 
+//including creating, deleting, updating, and retrieving city information!
+
+//2. Error Handling: 
+//Each method includes error handling to catch any issues that arise during database operations. 
+
+const {CityRepository} = require('../repository/index');
+   
 class CityService {
     constructor() {
         this.cityRepository = new CityRepository();
