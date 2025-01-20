@@ -1,3 +1,17 @@
+/**
+ CRUD Operations: on city records
+    createCity: Adds a new city to the database.
+    deleteCity: Removes a city from the database using its ID.
+    updateCity: Updates the details of an existing city based on its ID.
+    getCity: Retrieves a city record by its ID.
+ */
+
+
+//Integration with Models: 
+    //The repository interacts with the City model, allowing efficient and organized interaction with the database.
+
+
+
 const { City }= require('../models/index');
 
 class CityRepository {
