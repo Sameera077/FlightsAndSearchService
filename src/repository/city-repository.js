@@ -47,6 +47,11 @@ class CityRepository {
                     id: cityId
                 }
             });
+            //This below method will return updated object
+            // const city = await City.findByPk(cityId);
+            // city.name = data.name;
+            // await city.save();
+
             return city;
         } catch (error) {
             console.log("Something went wrong in the repository later");
