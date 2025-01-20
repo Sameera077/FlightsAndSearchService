@@ -9,10 +9,6 @@ const { CityService } = require('../services/index');
 
 const cityService = new CityService();
 
-/**
- * POST
- * data --> req.body
- */
 const create = async (req, res) => {
     try {
         const city = await cityService.createCity(req.body);
@@ -32,8 +28,7 @@ const create = async (req, res) => {
         });
     }
 }
-
-//DELETE --> /city/:id
+// DELETE. -> /city/:id
 const destroy = async (req, res) => {
     try {
         const response = await cityService.deleteCity(req.params.id);
@@ -48,14 +43,13 @@ const destroy = async (req, res) => {
         return res.status(500).json({
             data: {},
             success: false,
-            message: 'Not able to delete a city',
+            message: 'Not able to delete the city',
             err: error
         });
     }
 }
 
-
-//GET --> /city/:id
+// GET -> /city/:id
 const get = async (req, res) => {
     try {
         const response = await cityService.getCity(req.params.id);
@@ -76,15 +70,14 @@ const get = async (req, res) => {
     }
 }
 
-
-//PATCH --> /city/:id --> req.body
+// Patch -> /city/:id -> req.body
 const update = async (req, res) => {
     try {
         const response = await cityService.updateCity(req.params.id, req.body);
         return res.status(200).json({
             data: response,
             success: true,
-            message: 'Successfully updated a city',
+            message: 'Successfully fetched a city',
             err: {}
         });
     } catch (error) {
@@ -97,6 +90,7 @@ const update = async (req, res) => {
         });
     }
 }
+
 
 module.exports = {
     create,
