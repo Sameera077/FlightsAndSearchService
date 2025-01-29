@@ -53,6 +53,7 @@ class CityRepository {
             // await city.save();
 
             return city;
+            
         } catch (error) {
             console.log("Something went wrong in the repository later");
             throw {error};
@@ -66,6 +67,17 @@ class CityRepository {
         } catch (error) {
             console.log("Something went wrong in the repository later");
             throw {error};
+        }
+    }
+    
+    async getAllCities() {
+        try {
+            const cities = await City.findAll();
+            return cities;
+        } catch (error) {
+            console.log("Something went wrong in the repository later");
+            throw {error};
+            
         }
     }
 }

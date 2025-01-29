@@ -44,8 +44,18 @@ class CityService {
     }
     async getCity(cityId) {
         try {
-            const city = await this.cityRepository.updateCity(cityId);
+            const city = await this.cityRepository.getCity(cityId);
             return city;
+        } catch (error) {
+            console.log("Something went wrong at service layer");
+            throw {error};
+        }
+    }
+
+    async getAllCities() {
+        try {
+            const cities = await this.cityRepository.getAllCities();
+            return cities;
         } catch (error) {
             console.log("Something went wrong at service layer");
             throw {error};
