@@ -1,6 +1,7 @@
 //Database config setup
 const express = require('express');
 const bodyParser = require('body-parser');
+const portfinder = require("portfinder");
 
 const { PORT } = require('./config/serverConfig');
 const ApiRoutes = require('./routes/index');
