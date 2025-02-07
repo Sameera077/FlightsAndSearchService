@@ -20,3 +20,5 @@ module.exports = {
     SuccessCodes
 }
 
+
+//When an object is frozen, you cannot add new properties, remove existing properties, or change the values of existing properties. This is useful for creating immutable objects, which can help prevent accidental changes to data.
